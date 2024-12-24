@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card {
+            background-color: white;
+            color: black;
+            border: 5px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 400px;
+            height: 600px;
+            border-radius: 50px;
+            margin: 40px;
+        }
+
+        .card img {
+            height: 250px;
+            width: 250px;
+            border-radius: 40px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+        .inner::first-line{
+            font-size: 30px;
+        }
+        .inner{
+            font-size: 20px;
+        }
+        #red{
+            color: red;
+            margin-top: 20px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+        let person = [
+            {
+                image: "https://du-website.s3.ap-south-1.amazonaws.com/U01/Faculty-Photo/5---29-04-2023-11-00-29.jpg",
+                name: "Gopi Sanghani",
+                designation: "Dean",
+                Degree: "M.E",
+            },
+            {
+                image: "https://du-website.s3.ap-south-1.amazonaws.com/U01/Faculty-Photo/3---28-04-2023-02-02-42.jpg",
+                name: "Dr. Nilesh Gambhava",
+                designation: "Professor",
+                Degree: "M.E",
+            },
+            {
+                image: "https://du-website.s3.ap-south-1.amazonaws.com/U01/Faculty-Photo/6---28-04-2023-02-06-07.jpg",
+                name: "Dr. Pradyumansinh Jadeja",
+                designation: "Professor",
+                Degree: "M.E",
+            },
+            {
+                image: "https://du-website.s3.ap-south-1.amazonaws.com/U01/Faculty-Photo/8---28-04-2023-02-06-25.jpg",
+                name: "Prof. Maulik Trivedi",
+                designation: "Assistant Professor",
+                Degree: "M.TECH",
+            },
+            {
+                image: "https://du-website.s3.ap-south-1.amazonaws.com/U01/Faculty-Photo/12---28-04-2023-02-06-51.jpg",
+                name: "Prof. Firoz Sherasiya",
+                designation: "Assistant Professor",
+                Degree: "M.E",
+            },
+            {
+                image: "https://du-website.s3.ap-south-1.amazonaws.com/U01/Faculty-Photo/10---28-04-2023-02-07-03.jpg",
+                name: "Prof. Rupesh Vaishnav",
+                designation: "Assistant Professor",
+                Degree: "M.E",
+            },
+        ]
+
+    </script>
+    <div class="container">
+        <script>
+            for (faculty of person) {
+                document.write("<div class='card'>")
+                document.write("<img src='" + faculty.image + "'>")
+                document.write("<br>")
+                document.write("<div class='inner'>")
+                document.write(faculty.name)
+                document.write("<br>")
+                document.write("<div id='red'>")
+                document.write(faculty.designation)
+                document.write("</div>")
+                document.write("<br>")
+                document.write(faculty.Degree)
+                document.write("<br>")
+                document.write("</div>")
+                document.write("</div>")
+            }  
+        </script>
+    </div>
+</body>
+
+</html>
